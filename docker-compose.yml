@@ -1,0 +1,23 @@
+version: '2'
+services:
+  mysql:
+    build: ./mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=db
+      - MYSQL_USER=docker
+      - MYSQL_PASSWORD=docker
+    ports:
+      - '3306:3306'
+    volumes:
+      - database:/var/lib/mysql
+  neko:
+    image: codeurs/mod-neko
+    ports:
+      - '80:80'
+    volumes:
+      - ./app/:/var/www/
+    depends_on:
+      - mysql
+volumes:
+  database:
