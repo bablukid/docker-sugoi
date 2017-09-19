@@ -1,0 +1,9 @@
+::use 'design.mtt'::
+
+::if user!=null::
+    Hello ::user.name:: !
+::else::
+    Hello visitor !
+::end::
+
+::end::
