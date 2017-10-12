@@ -23,7 +23,7 @@
 
 	<body class="container">
 		
-		<h1>Sugoï app</h1>
+		<h1>::NAME::</h1>
 			
 		<!-- navbar -->
 		<ul class="nav nav-tabs" style="margin-bottom:12px;">

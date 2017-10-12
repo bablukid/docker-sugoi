@@ -1,3 +1,6 @@
-app/lang/fr/tmp/*
-app/lang/master/tmp/*
+app/lang/fr/tmp/*.n
+app/lang/fr/tmp/*.php
+app/lang/master/tmp/*.n
+app/lang/master/tmp/*.php
 index.n
+index.php

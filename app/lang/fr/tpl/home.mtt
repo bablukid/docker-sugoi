@@ -3,7 +3,7 @@
 ::if user!=null::
     Hello ::user.name:: !
 ::else::
-    Hello visitor !
+    <div class="text-center"><h2>It works !  \o/</h2></div>
 ::end::
 
 ::end::

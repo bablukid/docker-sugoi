@@ -3,7 +3,7 @@
 	langs="fr"
 
 	host="localhost"
-	name = "sugoi DEV"
+	name = "Boilerplate Sugoï App"
 	default_email = ""
 	webmaster_email = ""
 	
