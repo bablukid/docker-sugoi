@@ -11,3 +11,7 @@ http://sugoi.bubar.info
  
  Temploc (the template engine) should be allowed to write in the **/lang/$lang/tmp** templates folders, where $lang can be "master", "fr" or "en". Doing a **chmod 777 /lang/master/tmp** should fix this.
 
+ - The web root looks empty
+ 
+ By default, apache2 will look for files in a folder named **html**. If your project uses a different web root ( say "www" ), log into the neko container ( `docker exec -it $nekoContainerId /bin/bash` ) and make a simlink ( `cd /var/www/ && ln -s ./html ./www` )
+ 
