@@ -17,7 +17,7 @@ http://sugoi.bubar.info
  
 #### The database schema looks incomplete
  
- Sugoi init the database schema when you run the app for the first time. If you already ran another app in this container, you surely still have the bad databarse schema.  Log into the mysql container and drop all the tables :
+ Sugoi init the database schema when you run the app for the first time. If you already ran another app in this container, you surely still have the bad database schema.  Log into the mysql container and drop all the tables :
  - `docker exec -it $mysqlContainerId /bin/bash`
  - `mysql -uroot -p`
  - `use db;`
