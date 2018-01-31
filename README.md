@@ -1,8 +1,10 @@
 # Docker-sugoi
 
-Docker image for sugoi projects development
+Docker image for Sugoi projects development
 
 http://sugoi.bubar.info
+
+Type `docker-compose up` to start 2 dockers containers : one for the database (MySql) and one for Apache and the Neko VM
 
 
 ## Troubleshooting
