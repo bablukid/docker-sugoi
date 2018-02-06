@@ -1,10 +1,16 @@
 # Docker-sugoi
 
-Docker image for Sugoi projects development
+Docker image for Sugoi projects.
 
-http://sugoi.bubar.info
+Sugoi is a web framework for Haxe : http://sugoi.bubar.info
 
-Type `docker-compose up` to start 2 dockers containers : one for the database (MySql) and one for Apache and the Neko VM
+## Getting started
+ - Install Docker
+ - Download the files of this repo and copy them in a local folder
+ - Go to this folder and type `docker-compose up` to start 2 dockers containers : one for the database (MySQL 5.7) and one for Apache and the Neko VM
+ - The web root of your app is in `app/www/`
+ - The code of your app is in `app/src/`
+ - The templates of your app are in `app/lang/`
 
 
 ## Troubleshooting
