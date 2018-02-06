@@ -1,8 +1,16 @@
 # Docker-sugoi
 
-Docker image for sugoi projects development
+Docker image for Sugoi projects.
 
-http://sugoi.bubar.info
+Sugoi is a web framework for Haxe : http://sugoi.bubar.info
+
+## Getting started
+ - Install Docker
+ - Download the files of this repo and copy them in a local folder
+ - Go to this folder and type `docker-compose up` to start 2 dockers containers : one for the database (MySQL 5.7) and one for Apache and the Neko VM
+ - The web root of your app is in `app/www/`
+ - The code of your app is in `app/src/`
+ - The templates of your app are in `app/lang/`
 
 
 ## Troubleshooting
@@ -17,7 +25,7 @@ http://sugoi.bubar.info
  
 #### The database schema looks incomplete
  
- Sugoi init the database schema when you run the app for the first time. If you already ran another app in this container, you surely still have the bad databarse schema.  Log into the mysql container and drop all the tables :
+ Sugoi init the database schema when you run the app for the first time. If you already ran another app in this container, you surely still have the bad database schema.  Log into the mysql container and drop all the tables :
  - `docker exec -it $mysqlContainerId /bin/bash`
  - `mysql -uroot -p`
  - `use db;`
